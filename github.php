@@ -1,9 +1,4 @@
 <?php
- 
-// Use in the "Post-Receive URLs" section of your GitHub repo.
- 
-if ( $_POST['payload'] ) {
-  shell_exec( 'cd worryfreebylynn.com/test/restaurant && git pull' );
-}
- 
-?>
+$output = array();
+echo exec("git pull", $output);
+echo 'Output: ' . print_r($output, true); 
