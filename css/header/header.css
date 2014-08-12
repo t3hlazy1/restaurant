@@ -1,8 +1,6 @@
 #header{
 	position: absolute;
-	width: 100%; 
+	width: 99%; 
 	height: 33%; 
 	background-color: red;
-	margin: 0;
-	padding: 0;
 }
