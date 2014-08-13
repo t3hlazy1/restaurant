@@ -8,4 +8,25 @@
 	width: 100%; 
 	height: 125px; 
 	background-color: red;
+	box-shadow: 1px 1px 1px black; 
+}
+
+#navBar{
+	float: right; 
+	padding-right: 100px; 
+	font-size: 30px; 
+	text-shadow: 1px 1px 1px black; 
+}
+
+#navBar > ul > li{
+	padding-right: 25px; 
+	float: left;  
+	list-style: none; 
+	border-right: 2px solid black;
+	text-align: center; 
+	padding-left: 25px; 
+}
+
+li:first-child{
+	border-left: 2px solid black; 
 }
