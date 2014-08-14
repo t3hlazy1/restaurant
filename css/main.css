@@ -25,7 +25,7 @@ body{
 #navBar{
 	float: right; 
   list-style: none;
-	font-size: 22px; 
+	font-size: 19px; 
 	text-shadow: 1px 1px 1px black; 
   font-weight: bold;
 }
