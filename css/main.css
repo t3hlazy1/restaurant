@@ -30,3 +30,9 @@
 li:first-child{
 	border-left: 2px solid black; 
 }
+
+#header-logo{
+  height: 90px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
