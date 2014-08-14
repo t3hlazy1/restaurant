@@ -30,9 +30,8 @@ body{
   font-weight: bold;
 }
 
-#navBar > ul > li{
-	float: left;  
-	list-style: none;   
+#navBar >  li{
+	float: left;     
 	padding-left: 25px; 
 }
 
