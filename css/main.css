@@ -44,3 +44,7 @@ div.sub{
   width: 60%;
   margin: auto;
 }
+
+#content{
+  height: calc(100% - 130px);
+}
