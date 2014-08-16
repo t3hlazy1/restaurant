@@ -25,6 +25,10 @@ html, body{
   font-size: 23px;
 }
 
+#footer{
+  text-align: center;
+}
+
 #navBar{
 	float: right; 
   list-style: none;
@@ -38,6 +42,15 @@ html, body{
 	padding-left: 25px; 
 }
 
+#navBar > li > a{
+  text-decoration: none;
+  color: white;
+}
+#FFAFAF
+
+#navBar > li > a :hover{
+  color: #FFAFAF;
+}
 #header-logo{
   height: 90px;
   margin-top: 7px;
@@ -49,5 +62,5 @@ div.sub{
 }
 
 #content{
-  min-height: calc(100% - 143px);
+  min-height: calc(100% - 145px);
 }
