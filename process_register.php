@@ -66,11 +66,13 @@
 				$insert_stmt->bind_param('ssss', $ffusername, $ffemail, $password, $random_salt); 
 					if(! $insert_stmt->execute()){
 					echo "test"; 
+				}else{
+					echo "it worked, yay, lel"; 
 				}
 			}
 			
 		}
-
+		
 	}else{
 		header("location: index.php"); 
 	}
