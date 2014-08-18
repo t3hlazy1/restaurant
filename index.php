@@ -8,11 +8,9 @@ echo "<div class='right'><h1>Log-In</h1><form action='login.php'><input type='te
         Don't have an account? <a href='register.php'>Register</a></div>";
 
 $sql = "SELECT * FROM `users`";
-$res = mysqli_query($sql);
-if ($res){
-  while ($row = mysqli_fetch_assoc($res)){
-    echo $row['name'] . "<br>";
-  }
+$res = mysqli_query($con, $sql);
+while ($row = mysqli_fetch_assoc($res)){
+  echo $row['name'] . "<br>";
 }
         
 include 'footer.html';
