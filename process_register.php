@@ -87,7 +87,8 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
             }
         }
         header('Location: ./register_success.php');
-    }else{
-		echo "tesT"; 
-	}
+    }
+    else{
+      echo $error_msg;
+    }
 }
