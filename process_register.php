@@ -42,7 +42,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
                 $stmt->close();
     } else {
         $error_msg .= '<p class="error">Database error Line 39</p>';
-                //$stmt->close();
+                $stmt->close();
     }
  
     // check existing username
@@ -62,7 +62,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
                 $stmt->close();
         } else {
                 $error_msg .= '<p class="error">Database error line 55</p>';
-                //$stmt->close();
+                $stmt->close();
         }
  
     // TODO: 
