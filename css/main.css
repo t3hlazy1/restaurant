@@ -96,9 +96,9 @@ div.right{
 
 #reg_form{
 	position: absolute; 
-	left: 50%; 
+	left: 33%; 
 }
 
-#reg_form > form{
+#reg_form > form > input{
 	padding-bottom: 25px; 
 }
