@@ -29,7 +29,7 @@
 			$stmt->execute(); 
 			$stmt->store_result(); 
 			
-			if(stmt->num_rows == 1){
+			if($stmt->num_rows == 1){
 				$error_msg .= '<p>A user already exists with this email</p>';
 				$stmt->close(); 
 			}
