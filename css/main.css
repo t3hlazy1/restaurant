@@ -93,3 +93,8 @@ div.right{
   width: 200px;
   float: right;
 }
+
+form{
+	margin: 0; 
+	width: 300px; 
+}

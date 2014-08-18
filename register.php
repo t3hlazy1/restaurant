@@ -2,16 +2,27 @@
 	include 'includes.php';
 	include 'header.html';
 	
-	echo "<div id='reg_form'>
-			<form>
-				Select a username: <input type='text' name='username' maxlength='10'>
-					</br>
-				Select a password: <input type='password' name='password' maxlegnth='10'>
-					</br>
-				Re-enter your password: <input type='password' name='password' maxlength='10'>
-					</br>
-			</form>
-		</div>";
+
+	echo "<h1>Create a New Account</h1>
+      <form >
+       <table>
+        <tr>
+         <td>Name :</td> <td><input type='text' name='name'></td><br>
+        </tr>
+        <tr>
+         <td>Email :</td> <td><input type='text' name='email'></td><br>
+        </tr>
+        <tr>
+         <td>Password :</td> <td><input type='password' name='password'></td><br>
+        </tr>
+        <tr>
+         <td>Confirm Password :</td> <td><input type='password' name='checkpass'><br>
+        </tr>
+        <tr>
+         <td><input type='submit' value='Submit'></td>
+        </tr>
+       </table>
+      </form>";
 	
 	
 	include 'footer.html';
