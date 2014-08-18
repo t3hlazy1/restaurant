@@ -46,7 +46,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
     }
  
     // check existing username
-    $prep_stmt = "SELECT id FROM users WHERE username = ? LIMIT 1";
+    $prep_stmt = "SELECT id FROM users WHERE name = ? LIMIT 1";
     $stmt = $con->prepare($prep_stmt);
  
     if ($stmt) {
