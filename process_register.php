@@ -3,9 +3,7 @@ include_once 'includes.php';
  
 $error_msg = "";
  
- echo "test1";
 if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
-  echo "test2";
     // Sanitize and validate the data passed in
     $username = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
