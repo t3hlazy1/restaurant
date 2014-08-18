@@ -14,11 +14,11 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
     }
  
     $password = filter_input(INPUT_POST, 'p', FILTER_SANITIZE_STRING);
-    if (strlen($password) != 128) {
+    //if (strlen($password) != 128) {
         // The hashed pwd should be 128 characters long.
         // If it's not, something really odd has happened
-        $error_msg .= '<p class="error">Invalid password configuration.</p>';
-    }
+       // $error_msg .= '<p class="error">Invalid password configuration.</p>';
+    //}
  
     // Username validity and password validity have been checked client side.
     // This should should be adequate as nobody gains any advantage from
