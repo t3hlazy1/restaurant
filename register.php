@@ -4,19 +4,19 @@
 	
 
 	echo "<h1>Create a New Account</h1>
-      <form >
+      <form action='process_register.php' method='post'>
        <table>
         <tr>
-         <td>Name :</td> <td><input type='text' name='name'></td><br>
+         <td>Name:</td> <td><input type='text' name='name'></td><br>
         </tr>
         <tr>
-         <td>Email :</td> <td><input type='text' name='email'></td><br>
+         <td>Email:</td> <td><input type='text' name='email'></td><br>
         </tr>
         <tr>
-         <td>Password :</td> <td><input type='password' name='password'></td><br>
+         <td>Password:</td> <td><input type='password' name='password'></td><br>
         </tr>
         <tr>
-         <td>Confirm Password :</td> <td><input type='password' name='checkpass'><br>
+         <td>Confirm Password:</td> <td><input type='password' name='checkpass'><br>
         </tr>
         <tr>
          <td><input type='submit' value='Submit'></td>
