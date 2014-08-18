@@ -93,12 +93,3 @@ div.right{
   width: 200px;
   float: right;
 }
-
-#reg_form{
-	position: absolute; 
-	left: 33%; 
-}
-
-#reg_form > form > input{
-	padding-bottom: 25px; 
-}
