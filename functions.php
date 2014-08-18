@@ -19,5 +19,9 @@
 		session_regenerate_id(); 
 	 }
 	 
+	 function login($email, $password, $mysqli){
+		
+	 }
+	 
 	
 ?>
