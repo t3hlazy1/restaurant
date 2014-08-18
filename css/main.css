@@ -94,7 +94,11 @@ div.right{
   float: right;
 }
 
-#register_form{
+#reg_form{
 	position: absolute; 
-	text-align: center; 
+	left: 50%; 
+}
+
+#reg_form > form{
+	padding-bottom: 25px; 
 }
