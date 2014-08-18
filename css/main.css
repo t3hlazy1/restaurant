@@ -93,3 +93,8 @@ div.right{
   width: 200px;
   float: right;
 }
+
+#register_form{
+	position: absolute; 
+	text-align: center; 
+}
