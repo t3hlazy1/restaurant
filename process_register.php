@@ -39,8 +39,8 @@
 			$stmt->close(); 
 		}
 		
-		$prep_stmt = "SELECT id FROM users WHERE username = ? LIMIT 1"; 
-		$stmt = mysqli->prepare($prep_stmt); 
+		$prep_stmt = "SELECT id FROM users WHERE name = ? LIMIT 1"; 
+		$stmt = $mysqli->prepare($prep_stmt); 
 		
 		if($stmt){
 			$stmt->bind_param('s', $ffusername); 
@@ -60,7 +60,7 @@
 			$random_salt = hash('sha512', uniqid(mt_rand(1, mt_getrandmax()), true)); 
 			$password = hash('sha512', $ffpassword . $random_salt); 
 			
-			if($insert_stmt = $mysqli->prepare("INSERT INTO users (username, email, password, salt VALUES (?, ?, ?, ?)")){
+			if($insert_stmt = $mysqli->prepare("INSERT INTO users (name, email, password, salt VALUES (?, ?, ?, ?)")){
 				$insert_stmt->bind_param('ssss', $ffusername, $ffemail, $password, $random_salt); 
 					if(! $insert_stmt->execute()){
 					echo "test"; 
