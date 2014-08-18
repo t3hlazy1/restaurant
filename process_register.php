@@ -25,7 +25,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
     // breaking these rules.
     //
  
-    $prep_stmt = "SELECT id FROM members WHERE email = ? LIMIT 1";
+    $prep_stmt = "SELECT id FROM users WHERE email = ? LIMIT 1";
     $stmt = $con->prepare($prep_stmt);
  
    // check existing email  
@@ -42,11 +42,11 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
                 $stmt->close();
     } else {
         $error_msg .= '<p class="error">Database error Line 39</p>';
-                $stmt->close();
+                //$stmt->close();
     }
  
     // check existing username
-    $prep_stmt = "SELECT id FROM members WHERE username = ? LIMIT 1";
+    $prep_stmt = "SELECT id FROM users WHERE username = ? LIMIT 1";
     $stmt = $con->prepare($prep_stmt);
  
     if ($stmt) {
@@ -62,7 +62,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
                 $stmt->close();
         } else {
                 $error_msg .= '<p class="error">Database error line 55</p>';
-                $stmt->close();
+                //$stmt->close();
         }
  
     // TODO: 
