@@ -1,5 +1,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
+$("input[type=submit]").attr("disabled", "disabled");
 function nameCheck()
 {
 var xmlhttp;    
@@ -24,9 +25,11 @@ xmlhttp.onreadystatechange=function()
     //document.getElementById("name_info").innerHTML=xmlhttp.responseText;
     if (xmlhttp.responseText == "Available"){
       $('input[name=name]').css("color", "green");
+      $("input[type=submit]").removeAttr("disabled");
     }
     else{
       $('input[name=name]').css("color", "red");
+      $("input[type=submit]").attr("disabled", "disabled");
     }
     }
   }
@@ -44,7 +47,7 @@ xmlhttp.send();
       <form action='process_register.php' method='post'>
        <table>
         <tr>
-         <td>Name:</td> <td><input type='text' name='name' id='name' onkeypress='nameCheck()'></td><td id='name_info'></td><br>
+         <td>Name:</td> <td><input type='text' name='name' id='name' onkeyup='nameCheck()'></td><td id='name_info'></td><br>
         </tr>
         <tr>
          <td>Email:</td> <td><input type='text' name='email'></td><br>
@@ -56,7 +59,7 @@ xmlhttp.send();
          <td>Confirm Password:</td> <td><input type='password' name='checkpass'><br>
         </tr>
         <tr>
-         <td><input type='submit' value='Submit'></td>
+         <td><input type='submit' value='Submit' id='submit'></td>
         </tr>
        </table>
       </form>";
