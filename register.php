@@ -1,3 +1,33 @@
+<script>
+function nameCheck()
+{
+var xmlhttp;    
+var str = $('input[name=name]').val();
+if (str=="")
+  {
+  document.getElementById("name_info").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("name_info").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","name_check.php?name="+str,true);
+xmlhttp.send();
+}
+</script>
+
 <?php 
 	include 'includes.php';
 	include 'header.html';
@@ -7,7 +37,7 @@
       <form action='process_register.php' method='post'>
        <table>
         <tr>
-         <td>Name:</td> <td><input type='text' name='name'></td><br>
+         <td>Name:</td> <td><input type='text' name='name' id='name' onchange='nameCheck()'></td><td id='name_info'></td><br>
         </tr>
         <tr>
          <td>Email:</td> <td><input type='text' name='email'></td><br>
