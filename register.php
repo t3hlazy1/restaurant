@@ -38,7 +38,7 @@ xmlhttp.send();
       <form action='process_register.php' method='post'>
        <table>
         <tr>
-         <td>Name:</td> <td><input type='text' name='name' id='name' onchange='nameCheck()'></td><td id='name_info'></td><br>
+         <td>Name:</td> <td><input type='text' name='name' id='name' onkeypress='nameCheck()'></td><td id='name_info'></td><br>
         </tr>
         <tr>
          <td>Email:</td> <td><input type='text' name='email'></td><br>
