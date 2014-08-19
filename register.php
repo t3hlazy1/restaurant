@@ -6,7 +6,7 @@ var xmlhttp;
 var str = $('input[name=name]').val();
 if (str=="")
   {
-  document.getElementById("name_info").innerHTML="";
+  //document.getElementById("name_info").innerHTML="";
   return;
   }
 if (window.XMLHttpRequest)
@@ -21,7 +21,13 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-    document.getElementById("name_info").innerHTML=xmlhttp.responseText;
+    //document.getElementById("name_info").innerHTML=xmlhttp.responseText;
+    if (xmlhttp.responseText == "Available"){
+      $('input[name=name]').css("color", "green");
+    }
+    else{
+      $('input[name=name]').css("color", "red");
+    }
     }
   }
 xmlhttp.open("GET","name_check.php?name="+str,true);

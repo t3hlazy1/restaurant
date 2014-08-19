@@ -11,10 +11,10 @@ else{
 $sql = "SELECT * FROM `users` WHERE `name` = '$name'";
 $res = mysqli_query($con, $sql);
 if (mysqli_num_rows($res) > 0){
-  $return = "<span style='color: red;'>Taken</span>";
+  $return = "Taken";
 }
 else{
-  $return = "<span style='color: green;'>Available</span>";
+  $return = "Available";
 }
 
 echo $return;
