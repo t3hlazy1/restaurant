@@ -91,7 +91,11 @@ div.left{
 
 div.right{
   width: 200px;
-  float: right;
+  height: 74%;
+  border-left: 2px solid #AD3131;
+  position: absolute;
+  right: 18%;
+  padding: 10px;
 }
 
 form{

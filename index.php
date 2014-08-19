@@ -6,12 +6,6 @@ echo "<div class='left'><h1>Welcome!</h1><p>Finding a restaurant that you will <
 echo "<div class='right'><h1>Log-In</h1><form action='login.php'><input type='text' placeholder='User Name' size='12' name='username'><br><input type='password' name='password' placeholder='Password' size='12'>
         <br><input type='submit' value='Log In' style='width: 117px;'></form><br>
         Don't have an account? <a href='register.php'>Register</a></div>";
-
-$sql = "SELECT * FROM `users`";
-$res = mysqli_query($con, $sql);
-while ($row = mysqli_fetch_assoc($res)){
-  echo $row['name'] . "<br>";
-}
-        
+      
 include 'footer.html';
 ?>
