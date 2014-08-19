@@ -59,7 +59,7 @@ xmlhttp.send();
          <td>Confirm Password:</td> <td><input type='password' name='checkpass'><br>
         </tr>
         <tr>
-         <td><input type='submit' value='Submit' id='submit'></td>
+         <td><input type='submit' value='Submit' id='submit' disabled></td>
         </tr>
        </table>
       </form>";
