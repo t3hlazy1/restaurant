@@ -91,7 +91,7 @@ div.left{
 
 div.right{
   width: 200px;
-  height: 74%;
+  height: calc(100% - 200px);
   border-left: 2px solid #AD3131;
   position: absolute;
   right: 18%;
