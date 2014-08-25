@@ -8,4 +8,7 @@ echo "<div class='right'><h1>Log-In</h1><form action='login.php'><input type='te
         Don't have an account? <a href='register.php'>Register</a></div>";
       
 include 'footer.html';
+
+echo "test"; 
+
 ?>
