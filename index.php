@@ -9,6 +9,6 @@ echo "<div class='right'><h1>Log-In</h1><form action='login.php'><input type='te
       
 include 'footer.html';
 
-echo "test"; 
+
 
 ?>
